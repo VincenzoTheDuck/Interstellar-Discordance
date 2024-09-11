@@ -11,7 +11,7 @@ rotateSpeed: 1.5
 recoil: 3
 shoot: {
   type: ShootAlternate
-  spread: 7
+  spread: 8
 }
 recoils: 2
 shootSound: none
@@ -54,10 +54,10 @@ ammoTypes: {
           baseLength: 50
           lifetime: 120
           cone: 20
-          particles: 40
+          particles: 80
           colorFrom: 787878
           colorTo: 787878
-          sizeFrom: 4
+          sizeFrom: 8
           sizeTo: 0
           interp: pow3Out
           sizeInterp: pow2In
@@ -68,10 +68,10 @@ ammoTypes: {
           baseLength: 50
           lifetime: 90
           cone: 20
-          particles: 40
+          particles: 80
           colorFrom: 787878
           colorTo: 787878
-          sizeFrom: 2
+          sizeFrom: 5
           sizeTo: 0
           interp: pow3Out
           sizeInterp: pow2In
@@ -87,9 +87,9 @@ ammoTypes: {
           baseLength: 50
           lifetime: 100
           cone: 20
-          particles: 25
+          particles: 60
           colorTo: f45873
-          sizeFrom: 4
+          sizeFrom: 8
           sizeTo: 0
           interp: pow3Out
           sizeInterp: pow2In
@@ -100,9 +100,9 @@ ammoTypes: {
           baseLength: 50
           lifetime: 70
           cone: 20
-          particles: 25
+          particles: 60
           colorTo: f45873
-          sizeFrom: 2
+          sizeFrom: 5
           sizeTo: 0
           interp: pow3Out
           sizeInterp: pow2In
@@ -139,6 +139,42 @@ ammoTypes: {
 drawer: {
   type: DrawTurret
   //basePrefix: 0r-
+  parts: [
+    {
+      type: RegionPart
+      suffix: -hammer-l
+      mirror: false
+      moveY: -8.75
+      recoilIndex: 0
+      progress: reload
+    }
+    {
+      type: RegionPart
+      suffix: -hammer-r
+      mirror: false
+      moveY: -8.75
+      recoilIndex: 1
+      progress: reload
+    }
+    {
+      type: RegionPart
+      suffix: -heat-l
+      mirror: false
+      colorFrom: ff365a
+      colorTo: ff365a00
+      recoilIndex: 0
+      progress: recoil
+    }
+    {
+      type: RegionPart
+      suffix: -heat-r
+      mirror: false
+      colorFrom: ff365a
+      colorTo: ff365a00
+      recoilIndex: 1
+      progress: recoil
+    }
+  ]
 }
 category: turret
 research: 0r-begin
