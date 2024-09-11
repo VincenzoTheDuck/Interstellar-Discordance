@@ -1,0 +1,11 @@
+name: interstellar-discordance
+displayName: Interstellar Discordance
+author: Vincenzo
+description:
+  '''
+  trying to make a good mod
+
+  inspired heavily by lixie's allure
+  '''
+version: spaghetti
+minGameVersion: 147
