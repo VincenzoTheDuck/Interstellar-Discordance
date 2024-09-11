@@ -1,6 +1,6 @@
 type: ItemTurret
 localizedName: "Punch"
-description: "Slams a spring-loaded hammer into a pellet of explosive material and directs the explosion down the barrel at ground enemies."
+description: "Directs a massive explosion down the barrel at ground enemy targets."
 squareSprite: false
 size: 4
 scaledHealth: 200
