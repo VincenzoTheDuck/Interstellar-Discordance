@@ -147,6 +147,7 @@ drawer: {
       moveY: -8.75
       recoilIndex: 0
       progress: recoil
+      under: true
     }
     {
       type: RegionPart
@@ -155,24 +156,29 @@ drawer: {
       moveY: -8.75
       recoilIndex: 1
       progress: recoil
+      under: true
     }
     {
       type: RegionPart
       suffix: -heat-l
       mirror: false
-      colorFrom: ff365a00
+      color: 000000
       colorTo: ff365a
       recoilIndex: 0
       progress: recoil
+      outline: false
+      blending: additive
     }
     {
       type: RegionPart
       suffix: -heat-r
       mirror: false
-      colorFrom: ff365a00
+      color: 000000
       colorTo: ff365a
       recoilIndex: 1
       progress: recoil
+      outline: false
+      blending: additive
     }
   ]
 }
