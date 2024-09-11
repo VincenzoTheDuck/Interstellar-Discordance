@@ -138,7 +138,7 @@ ammoTypes: {
 }
 drawer: {
   type: DrawTurret
-  basePrefix: //0r-
+  //basePrefix: 0r-
 }
 category: turret
 research: 0r-begin
