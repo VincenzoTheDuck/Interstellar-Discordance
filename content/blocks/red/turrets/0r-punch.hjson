@@ -11,7 +11,7 @@ rotateSpeed: 1.5
 recoil: 3
 shoot: {
   type: ShootAlternate
-  spread: 8
+  spread: 10
 }
 recoils: 2
 shootSound: none
@@ -146,7 +146,7 @@ drawer: {
       mirror: false
       moveY: -8.75
       recoilIndex: 0
-      progress: reload
+      progress: recoil
     }
     {
       type: RegionPart
@@ -154,14 +154,14 @@ drawer: {
       mirror: false
       moveY: -8.75
       recoilIndex: 1
-      progress: reload
+      progress: recoil
     }
     {
       type: RegionPart
       suffix: -heat-l
       mirror: false
-      colorFrom: ff365a
-      colorTo: ff365a00
+      colorFrom: ff365a00
+      colorTo: ff365a
       recoilIndex: 0
       progress: recoil
     }
@@ -169,8 +169,8 @@ drawer: {
       type: RegionPart
       suffix: -heat-r
       mirror: false
-      colorFrom: ff365a
-      colorTo: ff365a00
+      colorFrom: ff365a00
+      colorTo: ff365a
       recoilIndex: 1
       progress: recoil
     }
