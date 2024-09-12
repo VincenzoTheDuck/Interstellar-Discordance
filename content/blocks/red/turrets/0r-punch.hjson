@@ -6,7 +6,7 @@ size: 4
 scaledHealth: 200
 cooldownTime: 100
 range: 300
-reload: 120
+reload: 140
 rotateSpeed: 1.5
 recoil: 3
 shoot: {
@@ -127,10 +127,10 @@ ammoTypes: {
     lightningCone: 35
     lightningType: {
       type: ShrapnelBulletType
-      lifetime: 40
+      lifetime: 80
       length: 200
       width: 18
-      serrations: 3
+      serrations: 0
       layer: 110
       damage: 100
       toColor: f45873
