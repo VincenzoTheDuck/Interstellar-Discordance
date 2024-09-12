@@ -11,8 +11,9 @@ rotateSpeed: 1.5
 recoil: 3
 shoot: {
   type: ShootAlternate
-  spread: 10
+  spread: 12
 }
+shootY: 18
 recoils: 2
 shootSound: none
 shake: 0.5
@@ -126,10 +127,10 @@ ammoTypes: {
     lightningCone: 35
     lightningType: {
       type: ShrapnelBulletType
-      lifetime: 60
+      lifetime: 40
       length: 200
       width: 18
-      serrations: 0
+      serrations: 3
       layer: 110
       damage: 100
       toColor: f45873
