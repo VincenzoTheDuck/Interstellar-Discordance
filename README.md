@@ -1,3 +1,3 @@
 # Interstellar-Discordance
 uhrhehrhrhhrhrhhrhrrhhrhrhrhrh idk
-clearly inspired by lixie's allure
+clearly inspired by @lixiewulf's allure
