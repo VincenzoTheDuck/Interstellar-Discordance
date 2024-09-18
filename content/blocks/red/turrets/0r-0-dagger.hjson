@@ -44,7 +44,7 @@ ammoTypes: {
     toColor: e65555
     lifetime: 30
     serrations: 0
-    width: 20
+    width: 15
     damage: 50
     shootEffect: {
       type: RadialEffect
@@ -59,7 +59,7 @@ ammoTypes: {
         lifetime: 30
         region: interstellar-discordance-shootspike
         length: 0
-        sizeFrom: 40
+        sizeFrom: 60
         sizeTo: 0
       }
     }
