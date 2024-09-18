@@ -6,7 +6,7 @@ description: '''
 squareSprite: false
 size: 2
 scaledHealth: 95
-heatColor: e65555
+heatColor: ff6262
 cooldownTime: 40
 range: 130
 reload: 50
@@ -41,7 +41,7 @@ ammoTypes: {
   trynoxite: {
     type: ShrapnelBulletType
     length: 100
-    toColor: e65555
+    toColor: ff6262
     lifetime: 30
     serrations: 0
     width: 15
@@ -55,7 +55,7 @@ ammoTypes: {
         cone: 0
         particles: 1
         colorFrom: ffffff
-        colorTo: e65555
+        colorTo: ff6262
         lifetime: 30
         region: interstellar-discordance-shootspike
         length: 0
