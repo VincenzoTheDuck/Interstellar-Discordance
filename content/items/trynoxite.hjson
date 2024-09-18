@@ -4,3 +4,4 @@ description: '''
 '''
 cost: 1
 healthScaled: 0.5
+color: ec5757
