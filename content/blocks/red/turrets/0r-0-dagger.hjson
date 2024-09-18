@@ -49,6 +49,8 @@ ammoTypes: {
       amount: 2
       rotationSpacing: 180
       effect: {
+        cone: 0
+        particles: 1
         colorFrom: ffffff
         colorTo: e65555
         lifetime: 30
@@ -57,6 +59,16 @@ ammoTypes: {
         sizeFrom: 10
         sizeTo: 0
       }
+    }
+    smokeEffect: {
+      particles: 9
+      cone: 90
+      colorFrom: ffffff
+      colorTo: e65555
+      length: 16
+      sizeFrom: 5
+      sizeTo: 0
+      lifetime: 30
     }
   }
 }
