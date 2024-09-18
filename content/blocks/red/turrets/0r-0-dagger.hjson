@@ -16,7 +16,7 @@ shoot: {
   type: ShootAlternate
   spread: 7
 }
-shootY: 18
+shootY: 16
 shootSound: shootBig
 shake: 1
 /*ammoUseEffect: {
@@ -44,11 +44,13 @@ ammoTypes: {
     toColor: e65555
     lifetime: 30
     serrations: 0
+    width: 16
     damage: 50
     shootEffect: {
       type: RadialEffect
       amount: 2
       rotationSpacing: 180
+      rotationOffset: 90
       effect: {
         cone: 0
         particles: 1
@@ -57,7 +59,7 @@ ammoTypes: {
         lifetime: 30
         region: interstellar-discordance-shootspike
         length: 0
-        sizeFrom: 20
+        sizeFrom: 8
         sizeTo: 0
       }
     }
