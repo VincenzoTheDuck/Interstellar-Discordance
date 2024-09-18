@@ -1,0 +1,71 @@
+type: ItemTurret
+localizedName: "Dagger"
+description: '''
+  Fires blasts of shrapnel at enemy targets.
+'''
+squareSprite: false
+size: 2
+scaledHealth: 95
+heatColor: e65555
+cooldownTime: 40
+range: 130
+reload: 50
+rotateSpeed: 2
+recoil: 2
+shoot: {
+  type: ShootAlternate
+  spread: 7
+}
+shootSound: shootBig
+shake: 1
+/*ammoUseEffect: {
+  casingFlip: true
+  baseRotation: 90
+  lifetime: 25
+  particles: 1
+  length: 12
+  randLength: false
+  cone: 15
+  offset: -90
+  spin: 1.8
+  region: allure-thin-case-back
+  sizeFrom: 2
+  sizeTo: 0
+  interp: pow3Out
+  sizeInterp: pow10In
+  colorFrom: ffb3b3
+  colorTo: ad4244
+}*/
+ammoTypes: {
+  trynoxite: {
+    type: ShrapnelBulletType
+    length: 170
+    toColor: e65555
+    lifetime: 30
+    serrations: 0
+    damage: 50
+    shootEffect: {
+      type: RadialEffect
+      amount: 2
+      rotationSpacing: 180
+      effect: {
+        colorFrom: ffffff
+        colorTo: e65555
+        lifetime: 30
+        region: interstellar-discordance-shootspike
+        length: 0
+        sizeFrom: 10
+        sizeTo: 0
+      }
+    }
+  }
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: 0r-
+}
+category: turret
+requirements: [
+  
+]
+coolantMultiplier: 1.8
