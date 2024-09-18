@@ -46,7 +46,7 @@ ammoTypes: {
     serrations: 0
     width: 20
     damage: 50
-    /*shootEffect: {
+    shootEffect: {
       type: RadialEffect
       amount: 2
       rotationSpacing: 180
@@ -62,8 +62,7 @@ ammoTypes: {
         sizeFrom: 40
         sizeTo: 0
       }
-    }*/
-    shootEffect: none
+    }
     smokeEffect: none
   }
 }
