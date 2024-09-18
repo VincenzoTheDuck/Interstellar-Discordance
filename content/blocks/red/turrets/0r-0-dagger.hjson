@@ -59,7 +59,7 @@ ammoTypes: {
         lifetime: 30
         region: interstellar-discordance-shootspike
         length: 0
-        sizeFrom: 20
+        sizeFrom: 40
         sizeTo: 0
       }
     }
