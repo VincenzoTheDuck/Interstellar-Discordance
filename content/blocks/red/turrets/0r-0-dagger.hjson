@@ -40,7 +40,7 @@ shake: 1
 ammoTypes: {
   trynoxite: {
     type: ShrapnelBulletType
-    length: 140
+    length: 100
     toColor: e65555
     lifetime: 30
     serrations: 0
