@@ -16,6 +16,7 @@ shoot: {
   type: ShootAlternate
   spread: 7
 }
+shootY: 18
 shootSound: shootBig
 shake: 1
 /*ammoUseEffect: {
@@ -39,7 +40,7 @@ shake: 1
 ammoTypes: {
   trynoxite: {
     type: ShrapnelBulletType
-    length: 170
+    length: 140
     toColor: e65555
     lifetime: 30
     serrations: 0
@@ -56,20 +57,11 @@ ammoTypes: {
         lifetime: 30
         region: interstellar-discordance-shootspike
         length: 0
-        sizeFrom: 10
+        sizeFrom: 20
         sizeTo: 0
       }
     }
-    smokeEffect: {
-      particles: 9
-      cone: 90
-      colorFrom: ffffff
-      colorTo: e65555
-      length: 16
-      sizeFrom: 5
-      sizeTo: 0
-      lifetime: 30
-    }
+    smokeEffect: none
   }
 }
 drawer: {
