@@ -41,6 +41,7 @@ shake: 2
 ammoTypes: {
   trynoxite: {
     type: ShrapnelBulletType
+    ammoMultiplier: 3
     length: 100
     toColor: ff6262
     lifetime: 30
@@ -92,6 +93,7 @@ drawer: {
     }
   ]
 }
+ammoPerShot: 2
 category: turret
 requirements: [
   
