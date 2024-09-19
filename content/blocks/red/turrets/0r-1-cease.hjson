@@ -97,8 +97,8 @@ drawer: {
     }
   ]
 }
-ammoCapacity: 30
-ammoPerShot: 15
+ammoCapacity: 40
+ammoPerShot: 20
 category: turret
 requirements: [
   
