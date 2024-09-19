@@ -1,0 +1,113 @@
+type: ItemTurret
+localizedName: "Cease"
+description: '''
+  Fires a powerful explosion at enemy targets.
+'''
+squareSprite: false
+size: 2
+scaledHealth: 110
+heatColor: ff6262
+cooldownTime: 50
+range: 200
+reload: 70
+rotateSpeed: 3.7
+recoil: 3.5
+shootY: 16
+shootSound: explosion
+shake: 5
+/*ammoUseEffect: {
+  casingFlip: true
+  baseRotation: 90
+  lifetime: 25
+  particles: 1
+  length: 12
+  randLength: false
+  cone: 15
+  offset: -90
+  spin: 1.8
+  region: allure-thin-case-back
+  sizeFrom: 2
+  sizeTo: 0
+  interp: pow3Out
+  sizeInterp: pow10In
+  colorFrom: ffb3b3
+  colorTo: ad4244
+}*/
+ammoTypes: {
+  trynoxite: {
+    type: ShrapnelBulletType
+    length: 100
+    toColor: ff6262
+    lifetime: 30
+    serrations: 0
+    width: 15
+    damage: 50
+    shootEffect: {
+      type: RadialEffect
+      amount: 2
+      rotationSpacing: 180
+      rotationOffset: 90
+      effect: {
+        cone: 0
+        particles: 1
+        colorFrom: ffffff
+        colorTo: ff6262
+        lifetime: 30
+        region: interstellar-discordance-shootspike
+        length: 0
+        sizeFrom: 60
+        sizeTo: 0
+      }
+    }
+    smokeEffect: none
+  }
+}
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: "-ram"
+      progress: reload
+      moveY: 4
+      moves: [
+        {
+          progress: {
+            type: charge
+            op: curve
+            interp: pow5In
+          }
+          y: 4
+        }
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: "-main"
+      layerOffset: 0.001
+    }
+    {
+      type: RegionPart
+      suffix: "-ram"
+      progress: reload
+      moveY: 4
+      layerOffset: 0.002
+      outline: false
+      moves: [
+        {
+          progress: {
+            type: charge
+            op: curve
+            interp: pow5In
+          }
+          y: 4
+        }
+      ]
+    }
+  ]
+}
+category: turret
+requirements: [
+  
+]
+coolantMultiplier: 1.8
