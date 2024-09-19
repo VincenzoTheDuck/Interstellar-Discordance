@@ -1,7 +1,7 @@
 type: ItemTurret
 localizedName: "Cease"
 description: '''
-  Fires a powerful explosion at enemy targets.
+  Fires an explosion at enemy targets, knocking them back..
 '''
 squareSprite: false
 size: 2
@@ -13,8 +13,11 @@ reload: 70
 rotateSpeed: 3.7
 recoil: 3.5
 shootY: 16
-shootSound: explosion
+shootSound: bang
 shake: 5
+shoot: {
+  firstShotDelay: 30
+}
 /*ammoUseEffect: {
   casingFlip: true
   baseRotation: 90
@@ -68,7 +71,12 @@ drawer: {
     {
       type: RegionPart
       suffix: "-ram"
-      progress: reload
+      progress: {
+        type: reload
+        op: curve
+        interp: pow3In
+      }
+      y: -4
       moveY: 4
       moves: [
         {
@@ -89,7 +97,12 @@ drawer: {
     {
       type: RegionPart
       suffix: "-ram"
-      progress: reload
+      progress: {
+        type: reload
+        op: curve
+        interp: pow3In
+      }
+      y: -4
       moveY: 4
       layerOffset: 0.002
       outline: false
