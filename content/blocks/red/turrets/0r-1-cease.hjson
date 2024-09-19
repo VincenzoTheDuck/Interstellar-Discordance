@@ -11,7 +11,7 @@ cooldownTime: 50
 range: 200
 reload: 70
 rotateSpeed: 3.7
-recoil: 3.5
+recoil: -1
 shootY: 16
 shootSound: bang
 shake: 5
@@ -71,19 +71,12 @@ drawer: {
     {
       type: RegionPart
       suffix: "-ram"
-      progress: reload
-      y: -4
-      moveY: 4
-      moves: [
-        {
-          progress: {
-            type: charge
-            op: curve
-            interp: pow5In
-          }
-          y: 4
-        }
-      ]
+      progress: {
+        type: charge
+        op: curve
+        interp: pow5In
+      }
+      moveY: -5
     }
     {
       type: RegionPart
@@ -93,21 +86,14 @@ drawer: {
     {
       type: RegionPart
       suffix: "-ram"
-      progress: reload
-      y: -4
-      moveY: 4
+      progress: {
+        type: charge
+        op: curve
+        interp: pow5In
+      }
+      moveY: -5
       layerOffset: 0.002
       outline: false
-      moves: [
-        {
-          progress: {
-            type: charge
-            op: curve
-            interp: pow5In
-          }
-          y: 4
-        }
-      ]
     }
   ]
 }
