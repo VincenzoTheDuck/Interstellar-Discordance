@@ -39,6 +39,8 @@ shoot: {
 ammoTypes: {
   trynoxite: {
     type: ShrapnelBulletType
+    ammoMultiplier: 1
+    displayAmmoMultiplier: false
     length: 100
     toColor: ff6262
     lifetime: 30
