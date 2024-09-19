@@ -12,10 +12,9 @@ range: 200
 reload: 80
 moveWhileCharging: false
 rotateSpeed: 3.7
-recoil: -1
+recoil: 1
 shootY: 16
-shootSound: bang
-shake: 5
+shake: 6
 shoot: {
   firstShotDelay: 45
 }
@@ -39,33 +38,109 @@ shoot: {
 }*/
 ammoTypes: {
   trynoxite: {
-    type: ShrapnelBulletType
+    type: BulletType
     ammoMultiplier: 1
     displayAmmoMultiplier: false
-    length: 100
-    toColor: ff6262
-    lifetime: 30
-    serrations: 0
-    width: 15
-    damage: 50
-    shootEffect: {
-      type: RadialEffect
-      amount: 2
-      rotationSpacing: 180
-      rotationOffset: 90
-      effect: {
-        cone: 0
-        particles: 1
-        colorFrom: ffffff
-        colorTo: ff6262
-        lifetime: 30
-        region: interstellar-discordance-shootspike
-        length: 0
-        sizeFrom: 60
+    speed: 0
+    lifetime: 0
+    hitEffect: none
+    despawnEffect: none
+    hitSound: bang
+    hitSoundVolume: 2
+    shootEffect: [
+      //smoke
+      {
+        cone: 35
+        particles: 15
+        lightOpacity: 0
+        colorFrom: 4b4b4b
+        colorTo: 4b4b4b
+        length: 200
+        lifetime: 60
+        interp: pow2Out
+        sizeFrom: 4
         sizeTo: 0
       }
-    }
+      {
+        cone: 35
+        particles: 15
+        lightOpacity: 0
+        colorFrom: 4b4b4b
+        colorTo: 4b4b4b
+        length: 200
+        lifetime: 60
+        interp: pow2Out
+        sizeFrom: 7
+        sizeTo: 0
+      }
+      //debris
+      {
+        cone: 35
+        particles: 12
+        lightOpacity: 0
+        colorTo: ff6262
+        length: 200
+        lifetime: 60
+        interp: pow2Out
+        sizeInterp: pow4Out
+        sizeFrom: 4
+        sizeTo: 0
+      }
+      {
+        cone: 35
+        particles: 12
+        lightOpacity: 0
+        colorTo: ff6262
+        length: 200
+        lifetime: 60
+        interp: pow2Out
+        sizeInterp: pow4Out
+        sizeFrom: 7
+        sizeTo: 0
+      }
+      //sparks
+      {
+        cone: 35
+        particles: 17
+        lightOpacity: 0
+        colorTo: ff6262
+        line: true
+        length: 200
+        lifetime: 60
+        interp: pow2Out
+        sizeInterp: pow4Out
+        lenFrom: 5
+        lenTo: 0
+        strokeFrom: 2
+        strokeTo: 0
+      }
+      {
+        cone: 35
+        particles: 17
+        lightOpacity: 0
+        colorTo: ff6262
+        line: true
+        length: 200
+        lifetime: 60
+        interp: pow2Out
+        sizeInterp: pow4Out
+        lenFrom: 7
+        lenTo: 0
+        strokeFrom: 2
+        strokeTo: 0
+      }
+    ]
     smokeEffect: none
+    fragBullets: 40
+    fragRandomSpread: 35
+    fragBullet: {
+      type: RailBulletType
+      damage: 50
+      length: 200
+      pierceDamageFactor: 0
+      pierceEffect: none
+      knockback: 4
+    }
   }
 }
 drawer: {
@@ -77,7 +152,7 @@ drawer: {
       progress: {
         type: charge
         op: curve
-        interp: pow3In
+        interp: pow3Out
       }
       moveY: -10
     }
