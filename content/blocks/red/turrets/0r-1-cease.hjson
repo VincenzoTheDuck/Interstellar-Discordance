@@ -73,28 +73,28 @@ drawer: {
   parts: [
     {
       type: RegionPart
-      suffix: "-ram"
+      suffix: -ram
       progress: {
         type: charge
         op: curve
         interp: pow3In
       }
-      moveY: -7
+      moveY: -10
     }
     {
       type: RegionPart
-      suffix: "-main"
+      suffix: -main
       layerOffset: 0.001
     }
     {
       type: RegionPart
-      suffix: "-ram"
+      suffix: -ram
       progress: {
         type: charge
         op: curve
         interp: pow3In
       }
-      moveY: -7
+      moveY: -10
       layerOffset: 0.002
       outline: false
     }
