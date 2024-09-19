@@ -20,24 +20,40 @@ shoot: {
 shootY: 16
 shootSound: shootBig
 shake: 2
-/*ammoUseEffect: {
-  casingFlip: true
-  baseRotation: 90
-  lifetime: 25
-  particles: 1
-  length: 12
-  randLength: false
-  cone: 15
-  offset: -90
-  spin: 1.8
-  region: allure-thin-case-back
-  sizeFrom: 2
-  sizeTo: 0
-  interp: pow3Out
-  sizeInterp: pow10In
-  colorFrom: ffb3b3
-  colorTo: ad4244
-}*/
+ammoUseEffect: [
+  {
+    casingFlip: true
+    lifetime: 30
+    particles: 1
+    length: 12
+    cone: 15
+    offset: -90
+    spin: 1.8
+    region: interstellar-discordance-standard-casing-back
+    sizeFrom: 2
+    sizeTo: 0
+    interp: pow2Out
+    sizeInterp: pow7In
+    colorFrom: ffa5a5
+    colorTo: ff6d6d
+  }
+  {
+    casingFlip: true
+    lifetime: 30
+    particles: 1
+    length: 12
+    cone: 15
+    offset: -90
+    spin: 1.8
+    region: interstellar-discordance-standard-casing
+    sizeFrom: 2
+    sizeTo: 0
+    interp: pow2Out
+    sizeInterp: pow7In
+    colorFrom: ffcece
+    colorTo: ff6d6d
+  }
+]
 ammoTypes: {
   trynoxite: {
     type: ShrapnelBulletType
