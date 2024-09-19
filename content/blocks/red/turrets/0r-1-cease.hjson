@@ -27,7 +27,8 @@ ammoUseEffect: [
     length: 12
     randLength: false
     cone: 0
-    offset: 0
+    offset: -90
+    baseRotation: 90
     spin: 0.3
     region: interstellar-discordance-standard-casing-back
     sizeFrom: 2
@@ -44,7 +45,8 @@ ammoUseEffect: [
     length: 12
     randLength: false
     cone: 0
-    offset: 0
+    offset: -90
+    baseRotation: 90
     spin: 0.3
     region: interstellar-discordance-standard-casing
     sizeFrom: 2
