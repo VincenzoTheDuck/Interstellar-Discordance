@@ -9,7 +9,8 @@ scaledHealth: 110
 heatColor: ff6262
 cooldownTime: 50
 range: 200
-reload: 70
+reload: 80
+moveWhileCharging: false
 rotateSpeed: 3.7
 recoil: -1
 shootY: 16
@@ -78,7 +79,7 @@ drawer: {
         op: curve
         interp: pow3In
       }
-      moveY: -5
+      moveY: -7
     }
     {
       type: RegionPart
@@ -93,7 +94,7 @@ drawer: {
         op: curve
         interp: pow3In
       }
-      moveY: -5
+      moveY: -7
       layerOffset: 0.002
       outline: false
     }
