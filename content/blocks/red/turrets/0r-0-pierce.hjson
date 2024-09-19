@@ -73,7 +73,7 @@ drawer: {
   parts: [
     {
       type: RegionPart
-      suffix: "-heat-l"
+      suffix: -heat-l
       outline: false
       progress: recoil
       blending: additive
@@ -83,7 +83,7 @@ drawer: {
     }
     {
       type: RegionPart
-      suffix: "-heat-r"
+      suffix: -heat-r
       outline: false
       progress: recoil
       blending: additive
