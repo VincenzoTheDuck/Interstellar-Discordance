@@ -76,7 +76,7 @@ drawer: {
       progress: {
         type: charge
         op: curve
-        interp: pow2In
+        interp: pow3In
       }
       moveY: -5
     }
@@ -91,7 +91,7 @@ drawer: {
       progress: {
         type: charge
         op: curve
-        interp: pow2In
+        interp: pow3In
       }
       moveY: -5
       layerOffset: 0.002
@@ -99,8 +99,8 @@ drawer: {
     }
   ]
 }
-ammoCapacity: 60
-ammoPerShot: 20
+ammoCapacity: 40
+ammoPerShot: 10
 category: turret
 requirements: [
   
