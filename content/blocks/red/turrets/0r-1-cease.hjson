@@ -19,24 +19,40 @@ shake: 6
 shoot: {
   firstShotDelay: 30
 }
-/*ammoUseEffect: {
-  casingFlip: true
-  baseRotation: 90
-  lifetime: 25
-  particles: 1
-  length: 12
-  randLength: false
-  cone: 15
-  offset: -90
-  spin: 1.8
-  region: allure-thin-case-back
-  sizeFrom: 2
-  sizeTo: 0
-  interp: pow3Out
-  sizeInterp: pow10In
-  colorFrom: ffb3b3
-  colorTo: ad4244
-}*/
+ammoUseEffect: [
+  {
+    casingFlip: true
+    lifetime: 30
+    particles: 1
+    length: 12
+    cone: 15
+    offset: -90
+    spin: 1.8
+    region: interstellar-discordance-standard-casing-back
+    sizeFrom: 2
+    sizeTo: 0
+    interp: pow2Out
+    sizeInterp: pow7In
+    colorFrom: ffa5a5
+    colorTo: ff6d6d
+  }
+  {
+    casingFlip: true
+    lifetime: 30
+    particles: 1
+    length: 12
+    cone: 15
+    offset: -90
+    spin: 1.8
+    region: interstellar-discordance-standard-casing
+    sizeFrom: 2
+    sizeTo: 0
+    interp: pow2Out
+    sizeInterp: pow7In
+    colorFrom: ffcece
+    colorTo: ff6d6d
+  }
+]
 ammoTypes: {
   trynoxite: {
     type: BulletType
@@ -59,7 +75,7 @@ ammoTypes: {
         length: 200
         lifetime: 70
         interp: pow2Out
-        sizeInterp: pow7Out
+        sizeInterp: pow5Out
         sizeFrom: 7
         sizeTo: 0
       }
@@ -72,7 +88,7 @@ ammoTypes: {
         length: 200
         lifetime: 70
         interp: pow2Out
-        sizeInterp: pow7Out
+        sizeInterp: pow5Out
         sizeFrom: 10
         sizeTo: 0
       }
@@ -85,7 +101,7 @@ ammoTypes: {
         length: 200
         lifetime: 70
         interp: pow2Out
-        sizeInterp: pow7Out
+        sizeInterp: pow5Out
         sizeFrom: 5
         sizeTo: 0
       }
@@ -97,7 +113,7 @@ ammoTypes: {
         length: 200
         lifetime: 70
         interp: pow2Out
-        sizeInterp: pow7Out
+        sizeInterp: pow5Out
         sizeFrom: 8
         sizeTo: 0
       }
@@ -111,7 +127,7 @@ ammoTypes: {
         length: 200
         lifetime: 70
         interp: pow2Out
-        sizeInterp: pow7Out
+        sizeInterp: pow5Out
         lenFrom: 6
         lenTo: 0
         strokeFrom: 3
@@ -126,7 +142,7 @@ ammoTypes: {
         length: 200
         lifetime: 70
         interp: pow2Out
-        sizeInterp: pow7Out
+        sizeInterp: pow5Out
         lenFrom: 9
         lenTo: 0
         strokeFrom: 3
@@ -138,7 +154,7 @@ ammoTypes: {
     fragRandomSpread: 35
     fragBullet: {
       type: RailBulletType
-      damage: 10
+      damage: 15
       length: 200
       pierceDamageFactor: 0
       pierceEffect: none
