@@ -16,7 +16,7 @@ shootY: 16
 shootSound: bang
 shake: 5
 shoot: {
-  firstShotDelay: 30
+  firstShotDelay: 45
 }
 /*ammoUseEffect: {
   casingFlip: true
@@ -99,7 +99,7 @@ drawer: {
     }
   ]
 }
-ammoCapacity: 40
+ammoCapacity: 60
 ammoPerShot: 20
 category: turret
 requirements: [
