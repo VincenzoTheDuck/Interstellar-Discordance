@@ -56,9 +56,9 @@ ammoTypes: {
         colorFrom: 4b4b4b
         colorTo: 4b4b4b
         length: 200
-        lifetime: 60
+        lifetime: 70
         interp: pow4Out
-        sizeFrom: 4
+        sizeFrom: 7
         sizeTo: 0
       }
       {
@@ -68,9 +68,9 @@ ammoTypes: {
         colorFrom: 4b4b4b
         colorTo: 4b4b4b
         length: 200
-        lifetime: 60
+        lifetime: 70
         interp: pow4Out
-        sizeFrom: 7
+        sizeFrom: 10
         sizeTo: 0
       }
       //debris
@@ -80,10 +80,10 @@ ammoTypes: {
         lightOpacity: 0
         colorTo: ff6262
         length: 200
-        lifetime: 60
+        lifetime: 70
         interp: pow4Out
         sizeInterp: pow2Out
-        sizeFrom: 4
+        sizeFrom: 5
         sizeTo: 0
       }
       {
@@ -92,10 +92,10 @@ ammoTypes: {
         lightOpacity: 0
         colorTo: ff6262
         length: 200
-        lifetime: 60
+        lifetime: 70
         interp: pow4Out
         sizeInterp: pow2Out
-        sizeFrom: 7
+        sizeFrom: 8
         sizeTo: 0
       }
       //sparks
@@ -106,12 +106,12 @@ ammoTypes: {
         colorTo: ff6262
         line: true
         length: 200
-        lifetime: 60
+        lifetime: 70
         interp: pow4Out
         sizeInterp: pow2Out
-        lenFrom: 5
+        lenFrom: 6
         lenTo: 0
-        strokeFrom: 2
+        strokeFrom: 3
         strokeTo: 0
       }
       {
@@ -121,17 +121,17 @@ ammoTypes: {
         colorTo: ff6262
         line: true
         length: 200
-        lifetime: 60
+        lifetime: 70
         interp: pow4Out
         sizeInterp: pow2Out
-        lenFrom: 7
+        lenFrom: 9
         lenTo: 0
-        strokeFrom: 2
+        strokeFrom: 3
         strokeTo: 0
       }
     ]
     smokeEffect: none
-    fragBullets: 40
+    fragBullets: 30
     fragRandomSpread: 35
     fragBullet: {
       type: RailBulletType
@@ -154,7 +154,7 @@ drawer: {
         op: curve
         interp: pow3Out
       }
-      moveY: -8
+      moveY: -6
     }
     {
       type: RegionPart
@@ -169,7 +169,7 @@ drawer: {
         op: curve
         interp: pow3Out
       }
-      moveY: -8
+      moveY: -6
       layerOffset: 0.002
       outline: false
     }
