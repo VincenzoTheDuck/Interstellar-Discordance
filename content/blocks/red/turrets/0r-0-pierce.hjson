@@ -26,9 +26,10 @@ ammoUseEffect: [
     lifetime: 30
     particles: 1
     length: 12
-    cone: 15
+    randLength: false
+    cone: 0
     offset: -90
-    spin: 1.8
+    spin: 0.3
     region: interstellar-discordance-standard-casing-back
     sizeFrom: 2
     sizeTo: 0
@@ -42,15 +43,16 @@ ammoUseEffect: [
     lifetime: 30
     particles: 1
     length: 12
-    cone: 15
+    randLength: false
+    cone: 0
     offset: -90
-    spin: 1.8
+    spin: 0.3
     region: interstellar-discordance-standard-casing
     sizeFrom: 2
     sizeTo: 0
     interp: pow2Out
     sizeInterp: pow10In
-    colorFrom: ffcece
+    colorFrom: ffe3e3
     colorTo: ff6d6d
   }
 ]
