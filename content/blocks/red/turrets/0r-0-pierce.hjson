@@ -1,5 +1,5 @@
 type: ItemTurret
-localizedName: "Dagger"
+localizedName: "Pierce"
 description: '''
   Fires blasts of shrapnel at enemy targets.
 '''
@@ -18,7 +18,7 @@ shoot: {
 }
 shootY: 16
 shootSound: shootBig
-shake: 1
+shake: 2
 /*ammoUseEffect: {
   casingFlip: true
   baseRotation: 90
