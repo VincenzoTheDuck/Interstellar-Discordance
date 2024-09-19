@@ -71,11 +71,7 @@ drawer: {
     {
       type: RegionPart
       suffix: "-ram"
-      progress: {
-        type: reload
-        op: curve
-        interp: pow3In
-      }
+      progress: reload
       y: -4
       moveY: 4
       moves: [
@@ -97,11 +93,7 @@ drawer: {
     {
       type: RegionPart
       suffix: "-ram"
-      progress: {
-        type: reload
-        op: curve
-        interp: pow3In
-      }
+      progress: reload
       y: -4
       moveY: 4
       layerOffset: 0.002
