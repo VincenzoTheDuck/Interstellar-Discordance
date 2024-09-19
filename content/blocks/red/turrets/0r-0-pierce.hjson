@@ -33,7 +33,7 @@ ammoUseEffect: [
     sizeFrom: 2
     sizeTo: 0
     interp: pow2Out
-    sizeInterp: pow7In
+    sizeInterp: pow10In
     colorFrom: ffa5a5
     colorTo: ff6d6d
   }
@@ -49,7 +49,7 @@ ammoUseEffect: [
     sizeFrom: 2
     sizeTo: 0
     interp: pow2Out
-    sizeInterp: pow7In
+    sizeInterp: pow10In
     colorFrom: ffcece
     colorTo: ff6d6d
   }
