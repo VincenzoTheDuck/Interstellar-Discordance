@@ -1,0 +1,104 @@
+type: ContinuousLiquidTurret
+localizedName: "Resist"
+description: '''
+  Fires a continuous flame at enemy targets.
+'''
+squareSprite: false
+size: 3
+scaledHealth: 135
+heatColor: ff6262
+cooldownTime: 100
+range: 200
+rotateSpeed: 2.7
+recoil: 0
+shoot: {
+  type: ShootBarrel
+  barrels: [
+    -3, -2, 0,
+    0, 0, 0,
+    3, -2, 0
+  ]
+}
+shootY: 24
+shootSound: none
+loopSound: torch
+shake: 0
+ammoTypes: {
+  hydrogen: {
+    type: ContinuousFlameBulletType
+    drawFlare: false
+    ammoMultiplier: 1
+    length: 200
+    colors: [
+      7565ff55,
+      7565ff,
+      8fb0ff,
+      bcdbff,
+      ffffff
+    ]
+    hitColor: 8fb0ff
+    lifetime: 30
+    damage: 17
+    hitEffect: randLifeSpark
+  }
+}
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: -nozzle
+      heatColor: ff6262
+      progress: recoil
+      moveY: -1.5
+      layerOffset: -0.001
+      moves: [
+        {
+          progress: {
+            type: warmup
+            op: curve
+            interp: pow3Out
+          }
+          y: -1.5
+        }
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: -side
+      mirror: true
+      progress: {
+        type: warmup
+        op: curve
+        interp: pow3Out
+      }
+      moveRot: -8
+      moveY: -2.5
+      moveX: 0.5
+      layerOffset: -0.002
+    }
+    {
+      type: RegionPart
+      suffix: -main
+      progress: recoil
+      moveY: -0.5
+      moves: [
+        {
+          progress: {
+            type: warmup
+            op: curve
+            interp: pow3Out
+          }
+          y: -1.5
+        }
+      ]
+    }
+  ]
+}
+ammoPerShot: 5
+ammoCapacity: 50
+category: turret
+requirements: [
+  
+]
+coolantMultiplier: 1.8
