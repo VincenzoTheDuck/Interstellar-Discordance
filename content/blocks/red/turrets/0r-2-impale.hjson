@@ -49,7 +49,7 @@ ammoTypes: {
           lifetime: 30
           region: interstellar-discordance-shootspike
           length: 0
-          sizeFrom: 75
+          sizeFrom: 80
           sizeTo: 0
         }
       }
@@ -64,7 +64,7 @@ ammoTypes: {
           lifetime: 30
           region: interstellar-discordance-shootspike
           length: 0
-          sizeFrom: 75
+          sizeFrom: 80
           sizeTo: 0
         }
       }
@@ -79,14 +79,14 @@ ammoTypes: {
           lifetime: 30
           region: interstellar-discordance-shootspike
           length: 0
-          sizeFrom: 55
+          sizeFrom: 90
           sizeTo: 0
         }
       }
       {
         type: RadialEffect
         amount: 1
-        rotationOffset: -30
+        rotationOffset: 30
         effect: {
           cone: 0
           particles: 1
@@ -94,7 +94,7 @@ ammoTypes: {
           lifetime: 30
           region: interstellar-discordance-shootspike
           length: 0
-          sizeFrom: 55
+          sizeFrom: 90
           sizeTo: 0
         }
       }
