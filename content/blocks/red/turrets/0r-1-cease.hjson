@@ -43,7 +43,7 @@ ammoTypes: {
         lifetime: 70
           interp: pow3Out
           sizeInterp: pow3In
-        sizeFrom: 7
+        sizeFrom: 5
         sizeTo: 0
       }
       {
@@ -56,7 +56,7 @@ ammoTypes: {
         lifetime: 70
           interp: pow3Out
           sizeInterp: pow3In
-        sizeFrom: 10
+        sizeFrom: 7
         sizeTo: 0
       }
       //debris
@@ -81,7 +81,7 @@ ammoTypes: {
         lifetime: 70
           interp: pow3Out
           sizeInterp: pow3In
-        sizeFrom: 8
+        sizeFrom: 9
         sizeTo: 0
       }
       //sparks
