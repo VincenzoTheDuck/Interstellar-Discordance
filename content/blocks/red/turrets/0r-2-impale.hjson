@@ -26,16 +26,16 @@ shootSound: shootBig
 shake: 5
 ammoUseEffect: casing4
 ammoTypes: {
-  trynoxite: {
+  tungsten: {
     type: ShrapnelBulletType
     ammoMultiplier: 3
     length: 130
-    toColor: ff6262
-    hitColor: ff6262
+    toColor: c4b2ff
+    hitColor: c4b2ff
     lifetime: 30
     serrations: 0
     width: 15
-    damage: 70
+    damage: 130
     hitEffect: randLifeSpark
     shootEffect: [
       {
@@ -45,7 +45,7 @@ ammoTypes: {
         effect: {
           cone: 0
           particles: 1
-          colorTo: ff6262
+          colorTo: c4b2ff
           lifetime: 30
           region: interstellar-discordance-shootspike
           length: 0
@@ -60,7 +60,7 @@ ammoTypes: {
         effect: {
           cone: 0
           particles: 1
-          colorTo: ff6262
+          colorTo: c4b2ff
           lifetime: 30
           region: interstellar-discordance-shootspike
           length: 0
@@ -75,7 +75,7 @@ ammoTypes: {
         effect: {
           cone: 0
           particles: 1
-          colorTo: ff6262
+          colorTo: c4b2ff
           lifetime: 30
           region: interstellar-discordance-shootspike
           length: 0
@@ -90,7 +90,83 @@ ammoTypes: {
         effect: {
           cone: 0
           particles: 1
-          colorTo: ff6262
+          colorTo: c4b2ff
+          lifetime: 30
+          region: interstellar-discordance-shootspike
+          length: 0
+          sizeFrom: 90
+          sizeTo: 0
+        }
+      }
+    ]
+    smokeEffect: none
+  }
+  thorium: {
+    type: ShrapnelBulletType
+    ammoMultiplier: 2
+    length: 170
+    rangeChange: 40
+    toColor: ff78c5
+    hitColor: ff78c5
+    lifetime: 30
+    serrations: 0
+    width: 15
+    damage: 245
+    hitEffect: randLifeSpark
+    shootEffect: [
+      {
+        type: RadialEffect
+        amount: 1
+        rotationOffset: -60
+        effect: {
+          cone: 0
+          particles: 1
+          colorTo: ff78c5
+          lifetime: 30
+          region: interstellar-discordance-shootspike
+          length: 0
+          sizeFrom: 80
+          sizeTo: 0
+        }
+      }
+      {
+        type: RadialEffect
+        amount: 1
+        rotationOffset: 60
+        effect: {
+          cone: 0
+          particles: 1
+          colorTo: ff78c5
+          lifetime: 30
+          region: interstellar-discordance-shootspike
+          length: 0
+          sizeFrom: 80
+          sizeTo: 0
+        }
+      }
+      {
+        type: RadialEffect
+        amount: 1
+        rotationOffset: -30
+        effect: {
+          cone: 0
+          particles: 1
+          colorTo: ff78c5
+          lifetime: 30
+          region: interstellar-discordance-shootspike
+          length: 0
+          sizeFrom: 90
+          sizeTo: 0
+        }
+      }
+      {
+        type: RadialEffect
+        amount: 1
+        rotationOffset: 30
+        effect: {
+          cone: 0
+          particles: 1
+          colorTo: ff78c5
           lifetime: 30
           region: interstellar-discordance-shootspike
           length: 0
