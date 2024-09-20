@@ -121,7 +121,7 @@ ammoTypes: {
     fragRandomSpread: 35
     fragBullet: {
       type: RailBulletType
-      damage: 30
+      damage: 9
       length: 200
       pierceDamageFactor: 0
       pierceEffect: none
