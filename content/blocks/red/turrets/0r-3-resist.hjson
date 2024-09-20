@@ -11,7 +11,7 @@ cooldownTime: 100
 range: 200
 rotateSpeed: 2.7
 recoil: 0
-shootY: 18
+shootY: 10
 shootSound: none
 loopSound: torch
 shake: 0
@@ -21,6 +21,7 @@ ammoTypes: {
     drawFlare: false
     ammoMultiplier: 1
     length: 200
+    width: 6.5
     colors: [
       7565ff55,
       7565ff,
@@ -44,7 +45,7 @@ drawer: {
       heatColor: ff6262
       progress: recoil
       moveY: -1.5
-      layerOffset: -0.003
+      layerOffset: -0.002
       moves: [
         {
           progress: {
@@ -75,6 +76,7 @@ drawer: {
       suffix: -main
       progress: recoil
       moveY: -0.5
+      layerOffset: -0.002
       moves: [
         {
           progress: {
