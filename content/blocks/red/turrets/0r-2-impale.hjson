@@ -35,7 +35,7 @@ ammoTypes: {
     lifetime: 30
     serrations: 0
     width: 15
-    damage: 35
+    damage: 70
     hitEffect: randLifeSpark
     spawnBullet: {
       lifetime: 0
@@ -44,10 +44,22 @@ ammoTypes: {
       despawnEffect: none
       fragBullets: 10
       fragRandomSpread: 45
+      fragLifeMin: 0.5
+      fragVelocityMin: 0.8
+      fragVelocityMin: 1.4
       fragBullet: {
         lifetime: 30
-        speed: 5
-        drag: 0.02
+        speed: 7
+        drag: 0.03
+        width: 4.5
+        height: 9
+        backColor: ff6262
+        frontColor: ff8383
+        damage: 20
+        createChance: 0.2
+        hitEffect: randLifeSpark
+        despawnEffect: randLifeSpark
+        hitColor: ff6262
       }
     }
     shootEffect: [
