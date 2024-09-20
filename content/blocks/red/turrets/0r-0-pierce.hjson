@@ -20,17 +20,19 @@ shoot: {
 shootY: 16
 shootSound: shootBig
 shake: 2
-ammoUseEffect: casing2
+ammoUseEffect: casing3
 ammoTypes: {
   trynoxite: {
     type: ShrapnelBulletType
     ammoMultiplier: 3
     length: 100
     toColor: ff6262
+    hitColor: ff6262
     lifetime: 30
     serrations: 0
     width: 15
-    damage: 50
+    damage: 75
+    hitEffect: randLifeSpark
     shootEffect: {
       type: RadialEffect
       amount: 2
@@ -39,12 +41,102 @@ ammoTypes: {
       effect: {
         cone: 0
         particles: 1
-        colorFrom: ffffff
         colorTo: ff6262
         lifetime: 30
         region: interstellar-discordance-shootspike
         length: 0
         sizeFrom: 60
+        sizeTo: 0
+      }
+    }
+    smokeEffect: none
+  }
+  titanium: {
+    type: ShrapnelBulletType
+    ammoMultiplier: 3
+    length: 125
+    rangeChange: 25
+    toColor: a9d8ff
+    hitColor: a9d8ff
+    lifetime: 30
+    serrations: 0
+    width: 15
+    damage: 75
+    hitEffect: randLifeSpark
+    shootEffect: {
+      type: RadialEffect
+      amount: 2
+      rotationSpacing: 180
+      rotationOffset: 90
+      effect: {
+        cone: 0
+        particles: 1
+        colorTo: a9d8ff
+        lifetime: 30
+        region: interstellar-discordance-shootspike
+        length: 0
+        sizeFrom: 60
+        sizeTo: 0
+      }
+    }
+    smokeEffect: none
+  }
+  titanium: {
+    type: ShrapnelBulletType
+    ammoMultiplier: 3
+    length: 125
+    rangeChange: 25
+    toColor: a9d8ff
+    hitColor: a9d8ff
+    lifetime: 30
+    serrations: 0
+    width: 17
+    damage: 112
+    hitEffect: randLifeSpark
+    shootEffect: {
+      type: RadialEffect
+      amount: 2
+      rotationSpacing: 180
+      rotationOffset: 90
+      effect: {
+        cone: 0
+        particles: 1
+        colorTo: a9d8ff
+        lifetime: 30
+        region: interstellar-discordance-shootspike
+        length: 0
+        sizeFrom: 68
+        sizeTo: 0
+      }
+    }
+    smokeEffect: none
+  }
+  thorium: {
+    type: ShrapnelBulletType
+    ammoMultiplier: 2
+    reloadMultiplier: 0.75
+    length: 132
+    rangeChange: 32
+    toColor: f9a3c7
+    hitColor: f9a3c7
+    lifetime: 30
+    serrations: 0
+    width: 20
+    damage: 155
+    hitEffect: randLifeSpark
+    shootEffect: {
+      type: RadialEffect
+      amount: 2
+      rotationSpacing: 180
+      rotationOffset: 90
+      effect: {
+        cone: 0
+        particles: 1
+        colorTo: f9a3c7
+        lifetime: 30
+        region: interstellar-discordance-shootspike
+        length: 0
+        sizeFrom: 80
         sizeTo: 0
       }
     }
