@@ -1,0 +1,138 @@
+type: ItemTurret
+localizedName: "Impale"
+description: '''
+  Fires splintering blasts of shrapnel at enemy targets.
+'''
+squareSprite: false
+size: 3
+scaledHealth: 135
+heatColor: ff6262
+cooldownTime: 40
+range: 180
+reload: 45
+rotateSpeed: 2.35
+recoil: 3
+recoils: 3
+shoot: {
+  type: ShootBarrel
+  barrels: [
+    -3, -2, 0,
+    0, 0, 0,
+    3, -2, 0
+  ]
+}
+shootY: 24
+shootSound: shootBig
+shake: 5
+ammoUseEffect: casing4
+ammoTypes: {
+  trynoxite: {
+    type: ShrapnelBulletType
+    ammoMultiplier: 3
+    length: 130
+    toColor: ff6262
+    hitColor: ff6262
+    lifetime: 30
+    serrations: 0
+    width: 15
+    damage: 35
+    hitEffect: randLifeSpark
+    spawnBullet: {
+      lifetime: 0
+      speed: 0
+      hitEffect: none
+      despawnEffect: none
+      fragBullets: 10
+      fragRandomSpread: 45
+      fragBullet: {
+        lifetime: 30
+        speed: 5
+        drag: 0.02
+      }
+    }
+    shootEffect: [
+      {
+        type: WrapEffect
+        rotation: -60
+        effect: {
+          cone: 0
+          particles: 1
+          colorTo: ff6262
+          lifetime: 30
+          region: interstellar-discordance-shootspike
+          length: 0
+          sizeFrom: 60
+          sizeTo: 0
+        }
+      }
+      {
+        type: WrapEffect
+        rotation: -30
+        effect: {
+          cone: 0
+          particles: 1
+          colorTo: ff6262
+          lifetime: 30
+          region: interstellar-discordance-shootspike
+          length: 0
+          sizeFrom: 30
+          sizeTo: 0
+        }
+      }
+      {
+        type: WrapEffect
+        rotation: -30
+        effect: {
+          cone: 0
+          particles: 1
+          colorTo: ff6262
+          lifetime: 30
+          region: interstellar-discordance-shootspike
+          length: 0
+          sizeFrom: 30
+          sizeTo: 0
+        }
+      }
+    ]
+    smokeEffect: none
+  }
+}
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: -barrel-l
+      heatColor: ff6262
+      heatProgress: recoil
+      progress: recoil
+      moveY: -2.5
+      recoilIndex: 0
+    }
+    {
+      type: RegionPart
+      suffix: -barrel-m
+      heatColor: ff6262
+      heatProgress: recoil
+      progress: recoil
+      moveY: -2.5
+      recoilIndex: 1
+    }
+    {
+      type: RegionPart
+      suffix: -barrel-r
+      heatColor: ff6262
+      heatProgress: recoil
+      progress: recoil
+      moveY: -2.5
+      recoilIndex: 2
+    }
+  ]
+}
+ammoPerShot: 5
+ammoCapacity: 50
+category: turret
+requirements: [
+  
+]
+coolantMultiplier: 1.8
