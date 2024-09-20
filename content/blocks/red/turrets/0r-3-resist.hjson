@@ -8,6 +8,7 @@ size: 3
 scaledHealth: 135
 heatColor: ff6262
 cooldownTime: 100
+minWarmup: 0.95
 range: 200
 rotateSpeed: 2.7
 recoil: 0
