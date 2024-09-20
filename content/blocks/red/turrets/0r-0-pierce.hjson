@@ -31,7 +31,7 @@ ammoTypes: {
     lifetime: 30
     serrations: 0
     width: 15
-    damage: 75
+    damage: 35
     hitEffect: randLifeSpark
     shootEffect: {
       type: RadialEffect
@@ -61,7 +61,7 @@ ammoTypes: {
     lifetime: 30
     serrations: 0
     width: 15
-    damage: 75
+    damage: 66
     hitEffect: randLifeSpark
     shootEffect: {
       type: RadialEffect
@@ -91,7 +91,7 @@ ammoTypes: {
     lifetime: 30
     serrations: 0
     width: 17
-    damage: 112
+    damage: 95
     hitEffect: randLifeSpark
     shootEffect: {
       type: RadialEffect
