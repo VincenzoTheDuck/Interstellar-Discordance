@@ -11,15 +11,7 @@ cooldownTime: 100
 range: 200
 rotateSpeed: 2.7
 recoil: 0
-shoot: {
-  type: ShootBarrel
-  barrels: [
-    -3, -2, 0,
-    0, 0, 0,
-    3, -2, 0
-  ]
-}
-shootY: 24
+shootY: 18
 shootSound: none
 loopSound: torch
 shake: 0
@@ -38,20 +30,21 @@ ammoTypes: {
     ]
     hitColor: 8fb0ff
     lifetime: 30
-    damage: 17
+    damage: 22
     hitEffect: randLifeSpark
   }
 }
 drawer: {
   type: DrawTurret
   parts: [
+    //outlines
     {
       type: RegionPart
       suffix: -nozzle
       heatColor: ff6262
       progress: recoil
       moveY: -1.5
-      layerOffset: -0.001
+      layerOffset: -0.003
       moves: [
         {
           progress: {
@@ -80,6 +73,58 @@ drawer: {
     {
       type: RegionPart
       suffix: -main
+      progress: recoil
+      moveY: -0.5
+      moves: [
+        {
+          progress: {
+            type: warmup
+            op: curve
+            interp: pow3Out
+          }
+          y: -1.5
+        }
+      ]
+    }
+    //actual parts
+    {
+      type: RegionPart
+      suffix: -nozzle
+      outline: false
+      heatColor: ff6262
+      progress: recoil
+      moveY: -1.5
+      layerOffset: -0.001
+      moves: [
+        {
+          progress: {
+            type: warmup
+            op: curve
+            interp: pow3Out
+          }
+          y: -1.5
+        }
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: -side
+      outline: false
+      mirror: true
+      progress: {
+        type: warmup
+        op: curve
+        interp: pow3Out
+      }
+      moveRot: -8
+      moveY: -2.5
+      moveX: 0.5
+      layerOffset: -0.002
+    }
+    {
+      type: RegionPart
+      suffix: -main
+      outline: false
       progress: recoil
       moveY: -0.5
       moves: [
