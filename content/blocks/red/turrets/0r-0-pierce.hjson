@@ -18,7 +18,7 @@ shootSound: shootBig
 shake: 2
 ammoUseEffect: casing3
 ammoTypes: {
-  trynoxite: {
+  trynoxine: {
     type: ShrapnelBulletType
     ammoMultiplier: 3
     length: 100
