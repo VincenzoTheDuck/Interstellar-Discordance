@@ -1,7 +1,0 @@
-localizedName: "Trynoxite"
-description: '''
-  A hard, strong material used by the Rebel faction as a building material and ammunition. Violently oxidizes at high temperatures.
-'''
-cost: 1
-healthScaled: 0.5
-color: ec5757
