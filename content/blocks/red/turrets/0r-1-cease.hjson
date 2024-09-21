@@ -17,7 +17,7 @@ shoot: {
 }
 ammoUseEffect: casing3
 ammoTypes: {
-  trynoxite: {
+  trynoxine: {
     type: BulletType
     ammoMultiplier: 1
     displayAmmoMultiplier: false
