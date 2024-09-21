@@ -1,8 +1,4 @@
 type: ItemTurret
-localizedName: "Cease"
-description: '''
-  Fires an explosion at enemy targets, knocking them back.
-'''
 squareSprite: false
 size: 2
 scaledHealth: 110
