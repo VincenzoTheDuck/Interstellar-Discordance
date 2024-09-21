@@ -1,7 +1,3 @@
-localizedName: "Vierentine"
-description: '''
-  Used extensively by the Rebel faction as a structural reinforcement and superconducting material.
-'''
 cost: 4
 healthScaled: 2
 color: 1e8392
