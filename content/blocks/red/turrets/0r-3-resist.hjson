@@ -1,8 +1,4 @@
 type: ContinuousLiquidTurret
-localizedName: "Resist"
-description: '''
-  Fires a continuous flame at enemy targets.
-'''
 squareSprite: false
 size: 3
 scaledHealth: 135
