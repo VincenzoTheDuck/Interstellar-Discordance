@@ -1,8 +1,4 @@
 type: ItemTurret
-localizedName: "Pierce"
-description: '''
-  Fires blasts of shrapnel at enemy targets.
-'''
 squareSprite: false
 size: 2
 scaledHealth: 95
