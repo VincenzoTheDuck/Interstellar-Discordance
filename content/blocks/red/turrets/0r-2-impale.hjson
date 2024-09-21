@@ -1,8 +1,4 @@
 type: ItemTurret
-localizedName: "Impale"
-description: '''
-  Fires blasts of shrapnel at enemy targets.
-'''
 squareSprite: false
 size: 3
 scaledHealth: 135
