@@ -1,7 +1,3 @@
-localizedName: "Trynoxine"
-description: '''
-  Used extensively by the Rebel faction as a building material. Explodes when high stress is rapidly applied, oxidizes violently at high temperatures.
-'''
 cost: 1
 healthScaled: 0.5
 color: ec5757
