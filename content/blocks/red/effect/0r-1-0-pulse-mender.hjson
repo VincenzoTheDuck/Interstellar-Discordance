@@ -10,10 +10,10 @@ shootCone: 360
 shootY: 0
 shootSound: none
 shake: 0
-shootWarmupSpeed: 0.05
+shootWarmupSpeed: 0.07
 minWarmup: 0.99
 shootType: {
-  type: EmpBulletType
+  type: BulletType
   speed: 0
   lifetime: 0
   instantDisappear: true
@@ -22,25 +22,20 @@ shootType: {
   despawnEffect: none
   smokeEffect: none
   shootEffect: {
-    type: WaveEffect
-    sizeFrom: 3
-    sizeTo: 55
-    strokeFrom: 4
-    strokeTo: 0
-    lightOpacity: 1
-    colorFrom: ff6b6b
-    colorTo: ff6b6b
+    type: ExplosionEffect
     lifetime: 30
-    interp: pow3Out
+    waveColor: ff6b6b
+    waveLife: 27
+    sparks: 7
+    smokes: 0
+    waveStroke: 4
+    sparkRad: 50
+    waveRad: 55
+    sparkLife: 30
   }
   healPercent: 2
   radius: 55
   collidesTeam: true
-  hitUnits: false
-  timeIncrease: 0
-  timeDuration: 0
-  powerDamageScl: 0
-  powerSclDecrease: 0
   healColor: ff6b6b
   hitColor: ff6b6b
   ammoMultiplier: 1
@@ -56,7 +51,7 @@ drawer: [
         type: ShapePart
         circle: true
         hollow: true
-        radius: 0
+        radius: 3
         radiusTo: 55
         stroke: 0
         strokeTo: 4
