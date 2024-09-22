@@ -143,6 +143,11 @@ ammoPerShot: 5
 ammoCapacity: 50
 category: turret
 requirements: [
-  
+  trynoxine/180
+  graphite/150
+  silicon/120
+  titanium/100
+  magnesia/90
+  tungsten
 ]
 coolantMultiplier: 1.8
