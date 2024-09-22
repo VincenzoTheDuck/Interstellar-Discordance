@@ -8,6 +8,7 @@ rotateSpeed: 0
 alwaysShooting: true
 shootCone: 360
 shootY: 0
+recoil: 0
 shootSound: none
 shake: 0
 shootWarmupSpeed: 0.07
@@ -17,7 +18,7 @@ shootType: {
   speed: 0
   lifetime: 0
   instantDisappear: true
-  hitSound: none
+  hitSound: arc
   hitEffect: none
   despawnEffect: none
   smokeEffect: none
@@ -33,7 +34,7 @@ shootType: {
     waveRad: 55
     sparkLife: 30
   }
-  healPercent: 2
+  healPercent: 4
   radius: 55
   collidesTeam: true
   healColor: ff6b6b
@@ -72,5 +73,5 @@ requirements: [
   
 ]
 consumes: {
-  power: 3
+  power: 4
 }
