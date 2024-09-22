@@ -161,6 +161,9 @@ ammoCapacity: 40
 ammoPerShot: 10
 category: turret
 requirements: [
-  
+  trynoxine/150
+  graphite/120
+  silicon/90
+  titanium/100
 ]
 coolantMultiplier: 2.5
