@@ -25,8 +25,9 @@ shootType: {
     type: WaveEffect
     sizeFrom: 3
     sizeTo: 55
-    strokeFrom: 0
-    strokeTo: 4
+    strokeFrom: 4
+    strokeTo: 0
+    lightOpacity: 1
     colorFrom: ff6b6b
     colorTo: ff6b6b
     lifetime: 30
