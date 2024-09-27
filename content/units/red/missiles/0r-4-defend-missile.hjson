@@ -1,9 +1,9 @@
 type: missile
 template: MissileUnitType
-lifetime: 180
+lifetime: 40
 speed: 6
 rotateSpeed: 5
-missileAccelTime: 20
+missileAccelTime: 10
 homingDelay: 8
 drawCell: false
 physics: false
