@@ -20,7 +20,7 @@ weapons: [
     shootSound: largeCannon
     bullet: {
       type: ExplosionBulletType
-      splashDamage: 200
+      splashDamage: 300
       splashDamageRadius: 60
       shootEffect: none
       smokeEffect: none
@@ -99,3 +99,4 @@ weapons: [
 ]
 deathSound: none
 deathExplosionEffect: none
+range: 55
