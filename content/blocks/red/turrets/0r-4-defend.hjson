@@ -11,7 +11,7 @@ rotateSpeed: 2
 recoil: 1
 reload: 150
 shootY: 1
-shootSound: missile
+shootSound: missileLaunch
 shake: 3
 ammoTypes: {
   trynoxine: {
@@ -26,8 +26,11 @@ drawer: {
       suffix: -missile
       color: ffffff
       colorTo: ffffff00
+      mixColorTo: ff626200
+      mixColor: ffffff
       progress: reload
-      layerOffset: -0.002
+      outline: false
+      under: true
       y: -0.25
       moves: [
         {
