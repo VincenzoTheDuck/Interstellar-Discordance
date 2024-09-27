@@ -9,7 +9,7 @@ minWarmup: 0.95
 range: 300
 rotateSpeed: 2
 recoil: 1
-reload: 120
+reload: 150
 shootY: 1
 shootSound: missile
 shake: 3
