@@ -1,0 +1,89 @@
+type: ItemTurret
+squareSprite: false
+size: 4
+scaledHealth: 200
+heatColor: ff6262
+cooldownTime: 200
+minWarmup: 0.95
+range: 300
+rotateSpeed: 2.7
+recoil: 1
+shootY: 1
+shootSound: missile
+shake: 3
+ammoTypes: {
+  trynoxine: {
+    spawnUnit: 0r-4-defend-missile
+  }
+}
+drawer: {
+  type: DrawTurret
+  parts: [
+    //outlines
+    //actual parts
+    {
+      type: RegionPart
+      suffix: -missile
+      outline: false
+      color: ffffff
+      colorTo: ffffff00
+      progress: reload
+      layerOffset: -0.002
+      y: -0.25
+      moves: [
+        {
+          progress: {
+            type: warmup
+            op: curve
+            interp: pow3Out
+          }
+          y: -0.5
+        }
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: -side
+      outline: false
+      mirror: true
+      progress: {
+        type: warmup
+        op: curve
+        interp: pow3Out
+      }
+      moveRot: -4
+      moveY: -1
+      moveX: 0.5
+      layerOffset: -0.001
+    }
+    {
+      type: RegionPart
+      suffix: -main
+      outline: false
+      progress: recoil
+      moveY: -0.5
+      moves: [
+        {
+          progress: {
+            type: warmup
+            op: curve
+            interp: pow3Out
+          }
+          y: -1.5
+        }
+      ]
+    }
+  ]
+}
+ammoPerShot: 10
+ammoCapacity: 40
+category: turret
+requirements: [
+  trynoxine/110
+  graphite/190
+  silicon/220
+  titanium/300
+  magnesia/200
+  tungsten/120
+]
+coolantMultiplier: 1.8
