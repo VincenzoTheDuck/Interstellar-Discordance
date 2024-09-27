@@ -4,6 +4,7 @@ size: 4
 scaledHealth: 200
 heatColor: ff6262
 cooldownTime: 200
+warmupSpeed: 0.02
 minWarmup: 0.95
 range: 300
 rotateSpeed: 2
@@ -20,62 +21,9 @@ ammoTypes: {
 drawer: {
   type: DrawTurret
   parts: [
-    //outlines
     {
       type: RegionPart
       suffix: -missile
-      color: ffffff
-      colorTo: ffffff00
-      progress: reload
-      layerOffset: -0.003
-      y: -0.25
-      moves: [
-        {
-          progress: {
-            type: warmup
-            op: curve
-            interp: pow3Out
-          }
-          y: -0.5
-        }
-      ]
-    }
-    {
-      type: RegionPart
-      suffix: -side
-      mirror: true
-      progress: {
-        type: warmup
-        op: curve
-        interp: pow3Out
-      }
-      moveRot: -4
-      moveY: -1
-      moveX: 0.5
-      layerOffset: -0.003
-    }
-    {
-      type: RegionPart
-      suffix: -main
-      progress: recoil
-      moveY: -0.5
-      moves: [
-        {
-          progress: {
-            type: warmup
-            op: curve
-            interp: pow3Out
-          }
-          y: -1.5
-        }
-      ]
-      layerOffset: -0.003
-    }
-    //actual parts
-    {
-      type: RegionPart
-      suffix: -missile
-      outline: false
       color: ffffff
       colorTo: ffffff00
       progress: reload
@@ -95,7 +43,6 @@ drawer: {
     {
       type: RegionPart
       suffix: -side
-      outline: false
       mirror: true
       progress: {
         type: warmup
@@ -110,7 +57,6 @@ drawer: {
     {
       type: RegionPart
       suffix: -main
-      outline: false
       progress: recoil
       moveY: -0.5
       moves: [
