@@ -31,6 +31,7 @@ drawer: {
       progress: reload
       outline: false
       under: true
+      layerOffset: -0.002
       y: -0.25
       moves: [
         {
