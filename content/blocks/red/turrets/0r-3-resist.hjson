@@ -28,7 +28,7 @@ ammoTypes: {
     ]
     hitColor: 8fb0ff
     lifetime: 30
-    damage: 22
+    damage: 30
     hitEffect: randLifeSpark
   }
 }
