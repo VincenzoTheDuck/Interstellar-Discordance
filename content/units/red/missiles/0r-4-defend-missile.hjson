@@ -30,9 +30,10 @@ weapons: [
       fragBullet: {
         type: MissileBulletType
         backColor: ff4f4f
+        trailColor: ff4f4f
         frontColor: ff6f6f
-        width: 3
-        height: 4.5
+        width: 10
+        height: 14
         speed: 7
         lifetime: 20
         damage: 14
