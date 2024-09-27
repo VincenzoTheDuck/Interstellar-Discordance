@@ -1,0 +1,100 @@
+type: missile
+template: MissileUnitType
+lifetime: 180
+speed: 6
+rotateSpeed: 5
+missileAccelTime: 20
+homingDelay: 8
+drawCell: false
+physics: false
+trailLength: 7
+engineSize: 2
+engineOffset: 1
+trailColor: ff4f4f
+engineColor: ff4f4f
+weapons: [
+  {
+    controllable: false
+    shootCone: 360
+    shootOnDeath: true
+    shootSound: largeCannon
+    bullet: {
+      type: ExplosionBulletType
+      splashDamage: 200
+      splashDamageRadius: 60
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      fragBullets: 12
+      fragRandomSpread: 50
+      fragBullet: {
+        type: MissileBulletType
+        backColor: ff4f4f
+        frontColor: ff6f6f
+        width: 3
+        height: 4.5
+        speed: 7
+        lifetime: 20
+        damage: 14
+        splashDamage: 90
+        splashDamageRadius: 22
+        despawnHit: true
+        despawnEffect: none
+        hitEffect: {
+          type: WaveEffect
+          sizeFrom: 3
+          sizeTo: 22
+          colorTo: ff4f4f
+          lifetime: 10
+          strokeFrom: 2
+          strokeTo: 0
+        }
+      }
+      despawnEffect: [
+        {
+          length: 40
+          lifetime: 55
+          particles: 28
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 4
+          sizeTo: 0
+          interp: pow10Out
+          sizeInterp: pow5In
+        }
+        {
+          length: 37
+          lifetime: 33
+          particles: 17
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 2
+          sizeTo: 0
+          interp: pow10Out
+          sizeInterp: pow3In
+        }
+        {
+          length: 30
+          lifetime: 45
+          particles: 12
+          colorTo: ff4f4f
+          sizeFrom: 2
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow5In
+        }
+        {
+          type: WaveEffect
+          lifetime: 20
+          sizeFrom: 0
+          sizeTo: 45
+          strokeFrom: 5
+          strokeTo: 0
+          colorTo: ff4f4f
+        }
+      ]
+    }
+  }
+]
+deathSound: none
+deathExplosionEffect: none
