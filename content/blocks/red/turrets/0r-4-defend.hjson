@@ -6,8 +6,9 @@ heatColor: ff6262
 cooldownTime: 200
 minWarmup: 0.95
 range: 300
-rotateSpeed: 2.7
+rotateSpeed: 2
 recoil: 1
+reload: 120
 shootY: 1
 shootSound: missile
 shake: 3
@@ -20,6 +21,56 @@ drawer: {
   type: DrawTurret
   parts: [
     //outlines
+    {
+      type: RegionPart
+      suffix: -missile
+      color: ffffff
+      colorTo: ffffff00
+      progress: reload
+      layerOffset: -0.003
+      y: -0.25
+      moves: [
+        {
+          progress: {
+            type: warmup
+            op: curve
+            interp: pow3Out
+          }
+          y: -0.5
+        }
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: -side
+      mirror: true
+      progress: {
+        type: warmup
+        op: curve
+        interp: pow3Out
+      }
+      moveRot: -4
+      moveY: -1
+      moveX: 0.5
+      layerOffset: -0.003
+    }
+    {
+      type: RegionPart
+      suffix: -main
+      progress: recoil
+      moveY: -0.5
+      moves: [
+        {
+          progress: {
+            type: warmup
+            op: curve
+            interp: pow3Out
+          }
+          y: -1.5
+        }
+      ]
+      layerOffset: -0.003
+    }
     //actual parts
     {
       type: RegionPart
