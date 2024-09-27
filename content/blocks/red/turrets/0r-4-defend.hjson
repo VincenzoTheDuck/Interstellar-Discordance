@@ -4,7 +4,7 @@ size: 4
 scaledHealth: 200
 heatColor: ff6262
 cooldownTime: 200
-warmupSpeed: 0.02
+warmupSpeed: 0.006
 minWarmup: 0.95
 range: 300
 rotateSpeed: 2
@@ -26,8 +26,8 @@ drawer: {
       suffix: -missile
       color: ffffff
       colorTo: ffffff00
-      mixColorTo: ff626200
-      mixColor: ffffff
+      mixColorTo: ff6262
+      mixColor: ffffff00
       progress: reload
       outline: false
       under: true
