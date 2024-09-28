@@ -15,15 +15,6 @@ shootSound: none
 shoot: {
   firstShotDelay: 15
 }
-chargeEffect: {
-  region: 0r-5-silence-preview
-  lightOpacity: 1
-  length: 0
-  cone: 0
-  lifetime: 15
-  colorFrom: ffffff00
-  colorrTo: ffffff
-}
 shootEffect: none
 smokeEffect: none
 shake: 3
@@ -45,3 +36,15 @@ requirements: [
   thorium/100
 ]
 coolantMultiplier: 1.8
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      progress: charge
+      suffix: -preview
+      colorFrom: ffffff00
+      colorTo: ffffff
+    }
+  ]
+}
