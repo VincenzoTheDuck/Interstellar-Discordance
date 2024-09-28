@@ -39,7 +39,7 @@ drawer: {
       type: RegionPart
       progress: charge
       suffix: -preview
-      colorFrom: ffffff00
+      color: ffffff00
       colorTo: ffffff
     }
   ]
