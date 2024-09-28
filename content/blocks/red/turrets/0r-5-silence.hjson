@@ -1,0 +1,47 @@
+type: ItemTurret
+squareSprite: false
+size: 5
+scaledHealth: 200
+heatColor: ff6262
+cooldownTime: 200
+warmupSpeed: 0.006
+minWarmup: 0.95
+range: 220
+rotateSpeed: 2
+recoil: 1
+reload: 200
+shootY: 1
+shootSound: none
+shoot: {
+  firstShotDelay: 15
+}
+chargeEffect: {
+  region: 0r-5-silence-preview
+  lightOpacity: 1
+  length: 0
+  cone: 0
+  lifetime: 15
+  colorFrom: ffffff00
+  colorrTo: ffffff
+}
+shootEffect: none
+smokeEffect: none
+shake: 3
+ammoTypes: {
+  trynoxine: {
+    spawnUnit: 0r-5-defend-turret
+  }
+}
+ammoPerShot: 10
+ammoCapacity: 40
+category: turret
+requirements: [
+  trynoxine/120
+  graphite/200
+  silicon/150
+  titanium/235
+  magnesia/300
+  tungsten/150
+  thorium/100
+]
+coolantMultiplier: 1.8
