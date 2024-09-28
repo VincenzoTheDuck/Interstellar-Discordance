@@ -3,7 +3,7 @@ squareSprite: false
 size: 2
 health: 90
 range: 55
-reload: 90
+reload: 200
 rotateSpeed: 0
 alwaysShooting: true
 shootCone: 360
@@ -26,12 +26,13 @@ shootType: {
     type: ExplosionEffect
     lifetime: 30
     waveColor: ff6b6b
+    sparkColor: ff6b6b
     waveLife: 27
     sparks: 7
     smokes: 0
     waveStroke: 4
     sparkRad: 50
-    waveRad: 55
+    waveRad: 30
     sparkLife: 30
   }
   healPercent: 4
@@ -73,5 +74,5 @@ requirements: [
   
 ]
 consumes: {
-  power: 4
+  power: 0.3
 }
