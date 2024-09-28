@@ -2,6 +2,7 @@ type: missile
 template: MissileUnitType
 range: 220
 lifetime: 120
+wobble: false
 speed: 0
 targetGround: false
 rotateSpeed: 3
