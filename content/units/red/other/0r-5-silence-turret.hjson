@@ -1,0 +1,287 @@
+type: missile
+template: MissileUnitType
+range: 220
+lifetime: 120
+speed: 0
+targetGround: false
+rotateSpeed: 3
+drawCell: false
+physics: false
+trailLength: 0
+engineSize: 0
+weapons: [
+  {
+    name: 0r-5-silence-barrel-big-l
+    shoot: {
+      type: ShootBarrel
+      barrels: [-11, 6, 0]
+    }
+    reload: 45
+    shootCone: 12
+    alwaysShooting: true
+    shootSound: shootBig
+    bullet: {
+      collidesGround: false
+      damage: 90
+      width: 10
+      height: 15
+      lifetime: 36
+      speed: 6
+      hitEffect: none
+      despawnEffect: [
+        {
+          length: 15
+          lifetime: 30
+          particles: 28
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 4
+          sizeTo: 0
+          interp: pow10Out
+          sizeInterp: pow5In
+        }
+        {
+          length: 15
+          lifetime: 33
+          particles: 17
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 2
+          sizeTo: 0
+          interp: pow10Out
+          sizeInterp: pow3In
+        }
+        {
+          length: 17
+          lifetime: 15
+          particles: 12
+          colorTo: ff4f4f
+          sizeFrom: 2
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow5In
+        }
+        {
+          type: WaveEffect
+          lifetime: 20
+          sizeFrom: 3
+          sizeTo: 30
+          strokeFrom: 5
+          strokeTo: 0
+          colorTo: ff4f4f
+        }
+      ]
+    }
+  }
+  {
+    name: 0r-5-silence-barrel-big-r
+    shoot: {
+      type: ShootBarrel
+      barrels: [11, 6, 0]
+    }
+    reload: 45
+    shootCone: 12
+    alwaysShooting: true
+    shootSound: shootBig
+    bullet: {
+      collidesGround: false
+      damage: 90
+      width: 10
+      height: 15
+      lifetime: 36
+      speed: 6
+      hitEffect: none
+      despawnEffect: [
+        {
+          length: 15
+          lifetime: 30
+          particles: 28
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 4
+          sizeTo: 0
+          interp: pow10Out
+          sizeInterp: pow5In
+        }
+        {
+          length: 15
+          lifetime: 33
+          particles: 17
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 2
+          sizeTo: 0
+          interp: pow10Out
+          sizeInterp: pow3In
+        }
+        {
+          length: 17
+          lifetime: 15
+          particles: 12
+          colorTo: ff4f4f
+          sizeFrom: 2
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow5In
+        }
+        {
+          type: WaveEffect
+          lifetime: 20
+          sizeFrom: 3
+          sizeTo: 30
+          strokeFrom: 5
+          strokeTo: 0
+          colorTo: ff4f4f
+        }
+      ]
+    }
+  }
+  {
+    name: 0r-5-silence-barrel-small-l
+    shoot: {
+      type: ShootBarrel
+      barrels: [-6, 9, 0]
+    }
+    reload: 15
+    shootCone: 12
+    alwaysShooting: true
+    shootSound: shootBig
+    bullet: {
+      collidesGround: false
+      damage: 55
+      width: 7
+      height: 10
+      lifetime: 36
+      speed: 6
+      hitEffect: none
+      despawnEffect: [
+        {
+          length: 15
+          lifetime: 30
+          particles: 28
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 4
+          sizeTo: 0
+          interp: pow10Out
+          sizeInterp: pow5In
+        }
+        {
+          length: 15
+          lifetime: 33
+          particles: 17
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 2
+          sizeTo: 0
+          interp: pow10Out
+          sizeInterp: pow3In
+        }
+        {
+          length: 17
+          lifetime: 15
+          particles: 12
+          colorTo: ff4f4f
+          sizeFrom: 2
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow5In
+        }
+        {
+          type: WaveEffect
+          lifetime: 20
+          sizeFrom: 3
+          sizeTo: 30
+          strokeFrom: 5
+          strokeTo: 0
+          colorTo: ff4f4f
+        }
+      ]
+    }
+  }
+  {
+    name: 0r-5-silence-barrel-small-r
+    shoot: {
+      type: ShootBarrel
+      barrels: [6, 9, 0]
+    }
+    reload: 15
+    shootCone: 12
+    alwaysShooting: true
+    shootSound: shootBig
+    bullet: {
+      collidesGround: false
+      damage: 55
+      width: 7
+      height: 10
+      lifetime: 36
+      speed: 6
+      hitEffect: none
+      despawnEffect: [
+        {
+          length: 15
+          lifetime: 30
+          particles: 28
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 4
+          sizeTo: 0
+          interp: pow10Out
+          sizeInterp: pow5In
+        }
+        {
+          length: 15
+          lifetime: 33
+          particles: 17
+          colorFrom: 787878
+          colorTo: 787878
+          sizeFrom: 2
+          sizeTo: 0
+          interp: pow10Out
+          sizeInterp: pow3In
+        }
+        {
+          length: 17
+          lifetime: 15
+          particles: 12
+          colorTo: ff4f4f
+          sizeFrom: 2
+          sizeTo: 0
+          interp: pow3Out
+          sizeInterp: pow5In
+        }
+        {
+          type: WaveEffect
+          lifetime: 20
+          sizeFrom: 3
+          sizeTo: 30
+          strokeFrom: 5
+          strokeTo: 0
+          colorTo: ff4f4f
+        }
+      ]
+    }
+  }
+  {
+    controllable: false
+    shootOnDeath: true
+    shootEffect: {
+      region: 0r-5-silence-preview
+      lightOpacity: 1
+      length: 0
+      cone: 0
+      lifetime: 15
+      colorFrom: ffffff
+      colorrTo: ffffff00
+    }
+    smokeEffect: none
+    shootSound: none
+    bullet: {
+      type: BulletType
+      lifetime: 0
+      speed: 0
+    }
+  }
+]
+deathSound: nonenone
+range: 55
