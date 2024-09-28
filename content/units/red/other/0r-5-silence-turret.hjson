@@ -12,10 +12,13 @@ engineSize: 0
 weapons: [
   {
     name: 0r-5-silence-barrel-big-l
+    mirror: false
     shoot: {
       type: ShootBarrel
       barrels: [-11, 6, 0]
     }
+    frontColor: ff6d6d
+    backColor: ff4949
     reload: 45
     shootCone: 12
     alwaysShooting: true
@@ -75,10 +78,13 @@ weapons: [
   }
   {
     name: 0r-5-silence-barrel-big-r
+    mirror: false
     shoot: {
       type: ShootBarrel
       barrels: [11, 6, 0]
     }
+    frontColor: ff6d6d
+    backColor: ff4949
     reload: 45
     shootCone: 12
     alwaysShooting: true
@@ -138,10 +144,13 @@ weapons: [
   }
   {
     name: 0r-5-silence-barrel-small-l
+    mirror: false
     shoot: {
       type: ShootBarrel
       barrels: [-6, 9, 0]
     }
+    frontColor: ff6d6d
+    backColor: ff4949
     reload: 15
     shootCone: 12
     alwaysShooting: true
@@ -201,10 +210,13 @@ weapons: [
   }
   {
     name: 0r-5-silence-barrel-small-r
+    mirror: false
     shoot: {
       type: ShootBarrel
       barrels: [6, 9, 0]
     }
+    frontColor: ff6d6d
+    backColor: ff4949
     reload: 15
     shootCone: 12
     alwaysShooting: true
@@ -283,5 +295,6 @@ weapons: [
     }
   }
 ]
-deathSound: nonenone
+deathSound: none
 range: 55
+deathExplosionEffect: none
