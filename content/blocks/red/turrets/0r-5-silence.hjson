@@ -15,8 +15,8 @@ shootEffect: none
 smokeEffect: none
 shake: 3
 ammoTypes: {
-  trynoxine: {
-    spawnUnit: 0r-5-defend-turret
+  tungsten: {
+    spawnUnit: 0r-5-silence-turret
   }
 }
 ammoPerShot: 10
