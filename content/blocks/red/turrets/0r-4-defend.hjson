@@ -20,6 +20,7 @@ ammoTypes: {
 }
 drawer: {
   type: DrawTurret
+  basePrefix: 0r-
   parts: [
     {
       type: RegionPart
