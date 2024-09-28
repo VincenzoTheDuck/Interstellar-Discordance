@@ -32,15 +32,3 @@ requirements: [
   thorium/100
 ]
 coolantMultiplier: 1.8
-drawer: {
-  type: DrawTurret
-  parts: [
-    {
-      type: RegionPart
-      progress: charge
-      suffix: -preview
-      color: ffffff00
-      colorTo: ffffff
-    }
-  ]
-}
