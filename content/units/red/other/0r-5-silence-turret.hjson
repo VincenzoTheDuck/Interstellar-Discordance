@@ -13,6 +13,7 @@ engineSize: 0
 weapons: [
   {
     name: 0r-5-silence-barrel-big-l
+    under: true
     mirror: false
     shoot: {
       type: ShootBarrel
@@ -79,6 +80,7 @@ weapons: [
   }
   {
     name: 0r-5-silence-barrel-big-r
+    under: true
     mirror: false
     shoot: {
       type: ShootBarrel
@@ -145,6 +147,7 @@ weapons: [
   }
   {
     name: 0r-5-silence-barrel-small-l
+    under: true
     mirror: false
     shoot: {
       type: ShootBarrel
@@ -211,6 +214,7 @@ weapons: [
   }
   {
     name: 0r-5-silence-barrel-small-r
+    under: true
     mirror: false
     shoot: {
       type: ShootBarrel
