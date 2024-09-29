@@ -1,5 +1,6 @@
 type: missile
 template: MissileUnitType
+outlineColor: 2c2e33
 lifetime: 40
 speed: 6
 rotateSpeed: 5
