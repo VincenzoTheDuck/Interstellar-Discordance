@@ -3,6 +3,7 @@ squareSprite: false
 size: 3
 scaledHealth: 135
 heatColor: ff6262
+outlineColor: 2c2e33
 cooldownTime: 100
 minWarmup: 0.95
 range: 200
