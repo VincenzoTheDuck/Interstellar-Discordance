@@ -3,14 +3,14 @@ template: MissileUnitType
 outlineColor: 2c2e33
 lifetime: 40
 speed: 6
-rotateSpeed: 5
+rotateSpeed: 3.5
 missileAccelTime: 10
 homingDelay: 8
 drawCell: false
 physics: false
 trailLength: 7
-engineSize: 2
-engineOffset: 1
+engineSize: 3.5
+engineOffset: 2
 trailColor: ff4f4f
 engineColor: ff4f4f
 weapons: [
