@@ -1,4 +1,5 @@
 type: ItemTurret
+outlineColor: 2c2e33
 squareSprite: false
 size: 3
 scaledHealth: 135
