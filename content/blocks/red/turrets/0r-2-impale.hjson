@@ -219,6 +219,6 @@ requirements: [
   graphite/150
   silicon/120
   titanium/100
-  magnesia/90
+  tungsten/90
 ]
 coolantMultiplier: 1.8
