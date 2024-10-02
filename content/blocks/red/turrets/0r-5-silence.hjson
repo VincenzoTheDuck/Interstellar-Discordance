@@ -83,7 +83,7 @@ drawer: {
       progress: recoil
       under: true
       layerOffset: -0.001
-      moveY: 5
+      moveY: -6
     }
   ]
 }
