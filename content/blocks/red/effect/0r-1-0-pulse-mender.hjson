@@ -4,6 +4,7 @@ size: 2
 health: 90
 range: 55
 reload: 200
+loopSound: hum
 rotateSpeed: 0
 alwaysShooting: true
 shootCone: 360
