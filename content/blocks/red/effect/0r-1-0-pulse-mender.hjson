@@ -1,7 +1,7 @@
 type: PowerTurret
 squareSprite: false
 size: 2
-health: 90
+scaledHealth: 5
 range: 55
 reload: 200
 loopSound: hum
