@@ -1,0 +1,98 @@
+type: ItemTurret
+squareSprite: false
+outlineColor: 2c2e33
+size: 5
+scaledHealth: 250
+heatColor: ff6262
+cooldownTime: 40
+range: 300
+reload: 90
+rotateSpeed: 3.5
+recoil: 2
+targetGround: false
+shoot: {
+  shots: 6
+  shotDelay: 4
+}
+shootSound: shootSnap
+shake: 2
+ammoUseEffect: casing3
+ammoTypes: {
+  tungsten: {
+    collidesGround: false
+    sprite: missile-large
+    ammoMultiplier: 3
+    backColor: 80c1ff
+    frontColor: b4e1ff
+    hitColor: 80c1ff
+    trailColor: 80c1ff
+    lifetime: 50
+    speed: 6
+    height: 15
+    pierceCap: 3
+    trailWidth: 3.4
+    width: 10
+    damage: 100
+    hitEffect: [
+      colorSpark,
+      {
+        type: RadialEffect
+        amount: 4
+        rotationSpacing: 90
+        effect: {
+          cone: 0
+          particles: 1
+          colorTo: b4e1ff
+          lifetime: 30
+          region: interstellar-discordance-shootspike
+          length: 0
+          sizeFrom: 20
+          sizeTo: 0
+        }
+      }
+    ]
+    despawnEffect: colorSpark
+    shootEffect: {
+      type: RadialEffect
+      amount: 2
+      rotationSpacing: 180
+      rotationOffset: 90
+      effect: {
+        cone: 0
+        particles: 1
+        colorTo: b4e1ff
+        lifetime: 30
+        region: interstellar-discordance-shootspike
+        length: 0
+        sizeFrom: 30
+        sizeTo: 0
+      }
+    }
+    smokeEffect: none
+  }
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: 0r-
+  parts: [
+    {
+      type: RegionPart
+      suffix: -barrel
+      progress: recoil
+      under: true
+      layerOffset: -0.001
+      moveY: 5
+    }
+  ]
+}
+ammoPerShot: 2
+category: turret
+requirements: [
+  trynoxine/110
+  graphite/170
+  silicon/170
+  magnesia/220
+  tungsten/150
+  thorium/330
+]
+coolantMultiplier: 1.8
