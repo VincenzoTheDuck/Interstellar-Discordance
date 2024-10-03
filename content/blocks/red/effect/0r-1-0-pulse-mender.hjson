@@ -1,5 +1,6 @@
 type: PowerTurret
 squareSprite: false
+playerControllable: false
 size: 2
 scaledHealth: 5
 range: 55
