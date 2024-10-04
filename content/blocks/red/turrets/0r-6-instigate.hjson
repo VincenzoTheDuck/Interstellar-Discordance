@@ -1,0 +1,99 @@
+type: PowerTurret
+hasPower: false
+squareSprite: false
+outlineColor: 2c2e33
+size: 6
+scaledHealth: 290
+heatColor: ff6262
+cooldownTime: 250
+range: 120
+reload: 360
+rotateSpeed: 2
+recoil: 0
+shoot: {
+  firstShotDelay: 20
+}
+shootSound: bang
+shake: 3
+shootType: {
+  type: RailBulletType
+  pierceEffect: none
+  shootEffect: none
+  smokeEffect: none
+  pierce: false
+  damage: 900
+  knockback: 14
+  fragBullets: 1
+  fragBullet: {
+    type: BulletType
+    splashDamage: 450
+    knockback: 7
+    splashDamageRadius: 48
+    lifetime: 0
+    speed: 0
+    length: 120
+    hitEffect: none
+    despawnEffect: {
+      type: ExplosionEffect
+      waveColor: ff6262
+      waveRad: 48
+      sparks: 7
+      sparkColor: ff6262
+      smokes: 12
+    }
+  }
+}
+drawer: [
+  {
+    type: DrawRegion
+    suffix: -baes
+  }
+  {
+    type: DrawLiquidTile
+    liquid: hydrogen //TODO steam
+    padding: 11
+  }
+  {
+    type: DrawRegion
+    suffix: -base-top
+  }
+  {
+    type: DrawTurret
+    parts: [
+      {
+        type: RegionPart
+        suffix: -piston
+        moveY: 8
+        progress: {
+          type: recoil
+          op: curve
+          interp: pow3Out
+        }
+        moves: [
+          {
+            moveY: -4.75
+            progress: {
+              type: charge
+              op: curve
+              interp: pow3In
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
+category: turret
+requirements: [
+  trynoxine/200
+  silicon/300
+  tungsten/150
+  //TODO terrastel
+]
+consumes: {
+  liquids: [
+    //TODO steam
+    hydrogen/1.5
+  ]
+}
+coolantMultiplier: 1.8
