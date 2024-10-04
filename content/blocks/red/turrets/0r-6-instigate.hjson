@@ -85,11 +85,11 @@ drawer: [
   }
 ]
 category: turret
+//TODO terrastel
 requirements: [
   trynoxine/200
   silicon/300
   tungsten/150
-  //TODO terrastel
 ]
 consumes: {
   liquids: [
