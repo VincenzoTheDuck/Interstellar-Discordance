@@ -50,7 +50,8 @@ drawer: [
   }
   {
     type: DrawLiquidTile
-    drawLiquid: hydrogen //TODO steam
+    //TODO steam
+    drawLiquid: hydrogen
     padding: 11
   }
   {
